@@ -32,7 +32,7 @@ async fn main() -> Result<(), common::TestrpcError> {
     let _log_guard = logging::initialize_logging();
     let ctx = Arc::new(ctx::Context::new());
     let start = std::time::Instant::now();
-    
+
     tracing::info!("Starting testrpc with config file: {}", &opts.file);
 
     if opts.dry_run {
